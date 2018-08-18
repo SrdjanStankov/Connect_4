@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Connect_4_Console_Game
 {
@@ -221,7 +217,10 @@ namespace Connect_4_Console_Game
 			{
 				return nadjeni;
 			}
-			else return '~';
+			else
+			{
+				return '~';
+			}
 		}
 		/// <summary>
 		/// Proverava da li ima 4 ista u redu
