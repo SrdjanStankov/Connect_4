@@ -9,6 +9,8 @@ namespace Connect_4_Console_Game
 			char player1Char = '\0';
 			char player2Char = '\0';
 
+			DataSet dataSet = new DataSet();
+
 			Console.WriteLine("Enter the character to be used for");
 
 			// player 1 choosing char
@@ -25,13 +27,24 @@ namespace Connect_4_Console_Game
 			}
 
 			Console.WriteLine();
+			Console.WriteLine("Player 1 using character '{0}', Player 2 using character '{1}'. Press any key to continue", player1Char, player2Char);
+			Console.WriteLine();
+			Console.ReadKey(false);
+
+			Console.Clear();
 			Console.WriteLine("Player 1 using character '{0}', Player 2 using character '{1}'", player1Char, player2Char);
 			Console.WriteLine();
 
+			// players inputing characters
+			Console.WriteLine("Player one, enter the column number");
+			Console.WriteLine();
+			Console.ReadLine();
 
-			DataSet dataSet = new DataSet();
+
+
+
 			Console.WriteLine(dataSet);
-			
+
 		}
 
 		private static char ChooseCharacter()
